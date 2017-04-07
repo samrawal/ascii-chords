@@ -15,11 +15,13 @@ if len(chord_number) != 6:
 print "    e A D G B E"
 print "   ------------"
 
+
 for i in range(5):
     fret_notes = ""
     for j in range(6):
-        #print chord_number[j], "\t", fret_offset+i
-        if int(chord_number[j]) == int(fret_offset + i):
+        if chord_number[j] == "x" or chord_number[j] == "X":
+            fret_notes += "~ "
+        elif int(chord_number[j]) == int(fret_offset + i):
             fret_notes += "X "
         else:
             fret_notes += ". "

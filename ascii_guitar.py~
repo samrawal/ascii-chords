@@ -1,3 +1,0 @@
-import sys
-
-chord_number = sys.argv[1]
